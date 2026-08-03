@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*, ::after, ::before {
+    margin: 9;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    min-width: 320px;
+    height: 100%;
+    scroll-behavior: smooth;
+    font-family: 'Barlow', sans-serif;
+}
+
+:root {
+    --primary: #ff5f13;
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: #2c234d;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.btn {
+    background-color: var(--primary);
+    color: var(--bs-light);
+    padding: 15px 30px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    font-size: .9rem;
+    min-width: min-content;
+}
+
+.btn:hover {
+    border: 1px solid var(--primary);
+    color: var(--bs-light);
+}
+
+span {
+    color: var(--primary);
+    text-transform: capitalize;
+}
+
+p {
+    opacity: .5;
+}
+
+#main-head {
+    background: url("https://preview.colorlib.com/theme/logisticexpress/assets/img/hero/h1_hero.jpg.webp") no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 180svh;
+    min-height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.social-media a i, a {
+    transition: all .8s linear;
+}
+
+.social-media a i:hover, a:hover {
+    transition: all .8s;
+    color: var(--bs-orange);
+}
+
+.nav-link {
+    transition: all .8s linear;
+    color: var(--bs-light);
+    opacity: .5;
+}
+
+.nav-link:hover {
+    transition: all .8s;
+    opacity: 1;
+    color: var(--bs-orange);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23ffffff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.tracking-container {
+    margin-top: 15%;
+}
+
+.tracking-container h1 {
+    font-size: 3.5em;
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.tracking-section > .input-group > .btn {
+    min-width:275px;
+}
+
+.tracking-section > .input-group > .btn:hover {
+    background-color: var(--primary) ;
+}
+
+.tracking-section > .input-group > .input  {
+    outline: none;
+    width: 60%;
+    min-width: fit-content;
+}
+
+.direction-container {
+    margin-top: 5%;
+}
+
+.telephone i,
+.opening-hours i,
+.location i {
+    font-size: 2rem;
+    color: var(--primary);
+}
+
+.service-container {
+    margin-top: 10%;
+}
+
+.transport-size {
+    height: 80svh;
+}
+
+.land-transport i, .ship-transport i, .Air-transport i {
+    font-size: 2.5rem;
+    color: var(--bs-orange);
+    transition: transform 0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+.about-container {
+    margin-top: 10%;
+}
+
+.about-button > .btn:hover {
+    background-color: var(--primary);
+    color: var(--bs-light);
+}
+
+.about-bg-img {
+    background-image: url("https://preview.colorlib.com/theme/logisticexpress/assets/img/gallery/about2.png");
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position: center;
+    height: 95svh;
+    position: relative;
+    overflow: hidden;
+}
+
+.qoute-container {
+    background-image: url("https://preview.colorlib.com/theme/logisticexpress/assets/img/gallery/section_bg02.jpg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 170svh;
+    max-height: 400px;
+    min-height: 850px;
+    width: 100%;
+    margin-top: 10%;
+}
+
+.user-form {
+    min-width:330px;
+}
+
+.check-service {
+    margin-top: 6px;
+}
+
+/* Hide the default radio input */
+.form-check input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+
+/* Custom circular design for radio button */
+.form-check-label::before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 1px solid var(--bs-dark);
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* When the radio button is checked */
+.form-check input[type="radio"]:checked + .form-check-label::before {
+    background-color: var(--bs-orange);
+}
+
+/* Inner dot for the checked radio button */
+.form-check input[type="radio"]:checked + .form-check-label::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    top: 0;
+    left: 6px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    z-index: 2; /* Keep the inner dot above the radio button */
+}
+
+/* Checked Label Style */
+.member-container {
+    margin-top: 10%;
+}
+
+.members1 {
+    background-image: url("https://preview.colorlib.com/theme/logisticexpress/assets/img/gallery/team1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80svh;
+}
+
+
+.members2 {
+    background-image: url("https://preview.colorlib.com/theme/logisticexpress/assets/img/gallery/team2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80svh;
+}
+
+.members3 {
+    background-image: url("https://preview.colorlib.com/theme/logisticexpress/assets/img/gallery/team3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height:80svh;
+}
+
+
+.member-name {
+    background-color: #FFFFFF99;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    height: 60px;
+    transition: height .5s ease-in-out;
+    z-index: 1;
+}
+
+.member-name::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    opacity: 0.5; 
+    z-index: -1; 
+    transition: height .5s ease-in-out;
+}
+
+.person-member:hover .member-name {
+    height: 110px;
+    background-color: var(--bs-orange);
+    color: var(--bs-light);
+}
+
+.person-member:hover .member-name h6 {
+    color: var(--bs-light);
+}
+
+.person-member:hover .member-name::after {
+    height: 120px;
+}
+
+.member-social {
+    text-align: center;
+    padding: 10px 0;
+    opacity: 0;
+    transition: opacity .5s ease-in-out, bottom .5s ease-in-out; /* Include bottom in transition */
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    bottom: -50px; 
+}
+
+.person-member:hover .member-social {
+    opacity: 1; 
+    z-index: 2;
+    bottom: 0; 
+    color: white;
+}
+
+.member-social i {
+    padding: 10px 10px;
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-in-out; 
+}
+
+.person-member:hover .member-social i:nth-child(1) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.1s;
+}
+
+.person-member:hover .member-social i:nth-child(2) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.2s;
+}
+
+.person-member:hover .member-social i:nth-child(3) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.3s;
+}
+
+.person-member:hover .member-social i:nth-child(4) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.4s;
+}
+
+.person-member .member-social {
+    transition: opacity 0.5s ease-in-out, bottom 0.5s ease-in-out; /* Ensure it transitions back smoothly */
+}
+
+
+.storage-img, .container-img, .product-img {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.storage-img img, .container-img img, .product-img img {
+    height: 100%;
+    width: 100%;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.storage-img img:hover, .container-img img:hover, .product-img img:hover {
+    transform: scale(1.2);
+}
+
+.date {
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(245, 245, 245);
+    width: 80px;
+    padding: 0 20px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.date::after {
+    content: '27 Sep';
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    color: var(--bs-orange);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+footer {
+    background: url("https://preview.colorlib.com/theme/logisticexpress/assets/img/hero/h1_hero.jpg.webp") no-repeat;
+    background-size: 200%;
+    background-position: left center;
+    margin-top: 10%;
+    height: 100svh;
+    min-height: 400px; /* minimum height */
+    position: relative;
+    overflow: hidden;
+}
+
+@media (max-width: 578px) {
+    footer {
+        height: auto;
+        min-height: 300px; /* footer won't go below this height */
+        background-size: 250% 100%;
+        padding: 30px 0;
+    }
+}
+
+
+.footer-header-info a {
+    color:#fd7e14;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+.footer-link li a {
+    display: inline-block; /* or block */
+    transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+}
+
+.footer-link li a:hover {
+    transform: translateX(30px);
+}
