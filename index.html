@@ -19,22 +19,22 @@
                     <a href="mailto:noreply@yourdomain.com" class="text-decoration-none text-light opacity-50 small">Email: noreply@yourdomain.com</a>
                 </div>
                 <div class="social-media d-inline-flex gap-3">
-                    <a class="text-decoration-none small">
+                    <a class="text-decoration-none text-light opacity-50 small">
                         <i class="fa fa-twitter" aria-hidden="true"></i>
                     </a>
-                    <a class="text-decoration-none small">
+                    <a class="text-decoration-none text-light opacity-50 small">
                         <i class="fa fa-facebook" aria-hidden="true"></i>
                     </a>
-                    <a class="text-decoration-none small">
+                    <a class="text-decoration-none text-light opacity-50 small">
                         <i class="fa fa-linkedin" aria-hidden="true"></i>
                     </a>
-                    <a class="text-decoration-none small">
+                    <a class="text-decoration-none text-light opacity-50 small">
                         <i class="fa fa-google" aria-hidden="true"></i>
                     </a>
                 </div>
             </div>
         </div>
-        <nav class="navbar navbar-expand-sm fixed-top z-3">
+        <nav class="navbar navbar-expand-sm z-3">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
                     <img src="https://preview.colorlib.com/theme/logisticexpress/assets/img/logo/logo.png" alt="" class="img-fluid">
@@ -59,7 +59,7 @@
                             <a class="nav-link" href="#blog">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact">Contact</a>
+                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -190,7 +190,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid qoute-container position-relative overflow-hidden">
+    <div class="container-fluid qoute-container position-relative overflow-hidden" id="contact">
         <div class="container mt-5 user-form position-absolute top-0 end-0 w-50 p-3 bg-light">
             <div class="request-info">
                 <span>Get a Qote For Free
@@ -312,7 +312,7 @@
             </div>
         </div>
     </div>
-    <div class="container tourist-container" style="margin-top: 10%;">
+    <div class="container tourist-container" id="blog" style="margin-top: 10%;">
         <div class="tourist-section text-center">
             <span>Our Recent news
             </span>
@@ -451,7 +451,35 @@
                 <p class="text-light copy-right text-center">Copyright ©2024 All rights reserved!</p>
             </div>
         </div>
+        <div class="upper-button position-relative overflow-hidden">
+            <button><i class="fa fa-chevron-up text-light"></i></button>
+        </div>
     </footer>
     <script src="assets/js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const scrollBtn = document.querySelector('.upper-button button');
+            const upperButton = document.querySelector('.upper-button');
+                        
+            // Show/hide button based on scroll position
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 240) {
+                    upperButton.style.opacity = '1';
+                    upperButton.style.visibility = 'visible';
+                } else {
+                    upperButton.style.opacity = '0';
+                    upperButton.style.visibility = 'hidden';
+                }
+            });
+            
+            // Scroll to top when clicked
+            scrollBtn.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
