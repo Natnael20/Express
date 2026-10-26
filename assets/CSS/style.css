@@ -71,7 +71,7 @@ p {
 }
 
 #main-head {
-    background: url("https://preview.colorlib.com/theme/logisticexpress/assets/img/hero/h1_hero.jpg.webp") no-repeat;
+    background: url("https://preview.colorlib.com/theme/logisticexpress/assets/img/hero/h1_hero.jpg") no-repeat;
     background-position: center;
     background-size: cover;
     height: 140dvh;
@@ -165,7 +165,7 @@ p {
 }
 
 .about-bg-img {
-    background-image: url("https://preview.colorlib.com/theme/logisticexpress/assets/img/gallery/about2.png");
+    background-image: url("https://preview.colorlib.com/theme/logisticexpress/assets/img/gallery/about2.avif");
     background-repeat: no-repeat;
     background-size: 75%;
     background-position: center;
@@ -175,7 +175,7 @@ p {
 }
 
 .qoute-container {
-    background-image: url("https://preview.colorlib.com/theme/logisticexpress/assets/img/gallery/section_bg02.jpg.webp");
+    background-image: url("https://preview.colorlib.com/theme/logisticexpress/assets/img/gallery/section_bg02.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 170svh;
@@ -240,7 +240,7 @@ p {
 }
 
 .members1 {
-    background-image: url("https://preview.colorlib.com/theme/logisticexpress/assets/img/gallery/team1.png");
+    background-image: url("	https://preview.colorlib.com/theme/logisticexpress/assets/img/gallery/team1.avif");
     background-repeat: no-repeat;
     background-size: cover;
     height: 80svh;
@@ -250,7 +250,7 @@ p {
 
 
 .members2 {
-    background-image: url("https://preview.colorlib.com/theme/logisticexpress/assets/img/gallery/team2.png");
+    background-image: url("https://preview.colorlib.com/theme/logisticexpress/assets/img/gallery/team2.avif");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -258,7 +258,7 @@ p {
 }
 
 .members3 {
-    background-image: url("https://preview.colorlib.com/theme/logisticexpress/assets/img/gallery/team3.png");
+    background-image: url("https://preview.colorlib.com/theme/logisticexpress/assets/img/gallery/team3.avif");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -403,7 +403,7 @@ p {
 }
 
 footer {
-    background: url("https://preview.colorlib.com/theme/logisticexpress/assets/img/hero/h1_hero.jpg.webp") no-repeat;
+    background: url("https://preview.colorlib.com/theme/logisticexpress/assets/img/hero/h1_hero.jpg") no-repeat;
     background-size: 200%;
     background-position: left center;
     margin-top: 10%;
