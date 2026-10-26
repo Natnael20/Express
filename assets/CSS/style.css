@@ -437,8 +437,9 @@ footer {
     transform: translateX(30px);
 }
 
+
 .upper-button > button {
-    background: url("https://preview.colorlib.com/theme/logisticexpress/assets/img/hero/h1_hero.jpg.webp") no-repeat;
+    background: url("https://preview.colorlib.com/theme/logisticexpress/assets/img/hero/h1_hero.jpg") no-repeat;
     background-size: 200%;
     background-position: left center;
     height: 30px;
@@ -446,6 +447,7 @@ footer {
     position: fixed;
     bottom: 10px;
     right: 10px;
+    color: var(--bs-light);
     border: 1px solid white;
     outline: none;
 }
